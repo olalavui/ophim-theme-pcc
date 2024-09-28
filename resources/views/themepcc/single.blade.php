@@ -195,23 +195,12 @@
                             <div class="items clearfix">
                                 {!! $currentMovie->actors->map(function ($actor) {
                                         return '<div class="item">
-                                                                                                                                                                    <div class="item-inner">
-                                                                                                                                                                        <a href="' .
-                                            $actor->getUrl() .
-                                            '" class="actor-ava"
-                                                                                                                                                                            style="background-image: url(\'/themes/pcc/images/dienvien.png\')"
-                                                                                                                                                                            title="' .
-                                            $actor->name .
-                                            '"></a>
-                                                                                                                                                                        <h3 class="actor-info">
-                                                                                                                                                                            <a href="" title="' .
-                                            $actor->name .
-                                            '">' .
-                                            $actor->name .
-                                            '</a>
-                                                                                                                                                                        </h3>
-                                                                                                                                                                    </div>
-                                                                                                                                                                </div>';
+                                            <div class="item-inner">
+                                                <a href="' . $actor->getUrl() . '" class="actor-ava" style="background-image: url(\'/themes/pcc/images/dienvien.png\')" title="' . $actor->name . '"></a>
+                                                <h3 class="actor-info"><a href="' . $actor->getUrl() . '" title="' . $actor->name . '">' . $actor->name . '</a>
+                                                </h3>
+                                            </div>
+                                                 </div>';
                                     })->implode('') !!}
                             </div>
                         </div>
@@ -232,12 +221,9 @@
                                 <div class="col-md-12">
                                     <div class="trailer">
                                         <div class="trailer-image-wrap">
-                                            <img class="lazyload lazy-loaded"
-                                                data-src="https://img.youtube.com/vi/{{ $trailer_id }}/sddefault.jpg"
-                                                alt="trailers">
-                                            <div class="icon-play"> <a href="javascript:void(0);" rel="nofollow"
-                                                    data-id="{{ $trailer_id }}"> <i class="sp-movie-icon-play"></i>
-                                                </a> </div>
+                                            <img class="lazyload lazy-loaded" data-src="https://img.youtube.com/vi/{{ $trailer_id }}/sddefault.jpg" alt="trailers">
+                                            <div class="icon-play"> <a href="javascript:void(0);" rel="nofollow" data-id="{{ $trailer_id }}"> <i class="sp-movie-icon-play"></i>
+                                                </a></div>
                                         </div>
                                         <div class="trailer-info">
                                             <div class="trailer-info-block">
@@ -270,8 +256,7 @@
                             </div>
                         </div>
                         <div class="block-content pt bin-bg">
-                            <div class="fb-comments" data-href="{{ $currentMovie->getUrl() }}" data-width="100%"
-                                data-num-posts="5"></div>
+                            <div class="fb-comments" data-href="{{ $currentMovie->getUrl() }}" data-width="100%" data-num-posts="5"></div>
                         </div>
                     </div>
                 </div>
