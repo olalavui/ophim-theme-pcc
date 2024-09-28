@@ -8,7 +8,7 @@
                     <span class="" itemProp="name">
                         Xem phim
                     </span>
-                    <meta itemProp="position" content="1" />
+                    <meta itemProp="position" content="1">
                 </a>
             </li>
 
@@ -66,7 +66,7 @@
         <div id="before-watching"></div>
         <div class="column-300 pull-left">
             <div class="thumbnail mb-none">
-                <img class="info-poster-img" src="{{ $currentMovie->getThumbUrl() }}" alt="{{ $currentMovie->name }}" />
+                <img class="info-poster-img" src="{{ $currentMovie->getThumbUrl() }}" alt="{{ $currentMovie->name }}">
             </div>
             <div class="button-play">
                 @if ($currentMovie->trailer_url)
