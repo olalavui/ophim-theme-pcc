@@ -3,10 +3,10 @@
         <a class="inner" href="{{$movie->getUrl()}}"
             title="{{$movie->name}}">
             <img
+                src="{{$movie->getThumbUrl()}}" 
                 data-src="{{$movie->getThumbUrl()}}"
                 alt="{{$movie->name}}"
-                class="movie-thumb lazyload lazy-loaded"
-            />
+                class="movie-thumb lazyload lazy-loaded">
             <span class="thumb-icon">
                 <i class="sp-movie-icon-play"></i>
             </span>
